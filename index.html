@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw4PC-i__eQ2n3bZ67vYUkrP9QPIElFuE&callback=initMap"></script>
+    <title>32smiles.com</title>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="#home"><h1><i class="fa-solid fa-tooth"></i>32 Smiles</h1></a>
+        </div>
+
+        <nav>
+            <a class="home" href="">Home</a>
+            <div class="dropdown">
+                <a class="prof-edu" href="#prof">Professional Education</a>
+                <div class="dropdown-content">
+                    <a href="#courses">Related Courses</a>
+                    <a href="#documents">Help Documents</a>
+                    <a href="#faculty">Faculty Resources</a>
+                    <a href="#students">Student Resources</a>
+                </div>
+            </div>
+            <a href="#patient">Patient Education</a>
+            <a href="#research">Research</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="display" id="tog-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="main" id="home">
+        <h1 class="head" id="head">- Welcome to 32 Smiles -</h1>
+        <div class="main-text">
+            <h1 class="main-head" id="m-head">Want to have a perfect smile ?</h1>
+            <p class="main-one">
+                At 32 Smiles, we are committed to providing you with the latest information about oral health and maintaining a beautiful smile. Good oral hygiene is crucial for overall well-being, and we strive to empower you with the knowledge you need to care for your dental health.
+            </p>
+            <a href="#contact"><button class="contact" id="con-btn">Talk to Us<i class="fa-solid fa-phone"></i></button></a>
+        </div>
+    </div>
+
+    <div class="professional-edu" id="prof">
+        <div class="prof-head">
+            <h1>Professional Education</h1>
+            <p>This section provides education assistance for students and practitioners in oral health care.</p>
+        </div>
+        <div class="prof-info">
+            <div class="courses" id="courses">
+                <h3><i class="fa-solid fa-arrow-right"></i>Finding Related Courses</h3>
+                <p>Explore a variety of courses related to oral health care, including:</p>
+                <div class="course-box">
+                    <div class="one">
+                        <ul>
+                            <a href="https://www.dentalcare.com/en-us/ce-courses/ce500"><li>Dental Anatomy</li></a>
+                        </ul>
+                    </div>
+                    <div class="one">
+                        <ul>
+                            <a href="https://dentistry.tamu.edu/departments/diagnostic/training-programs/oral-pathology.html"><li>Oral Pathology</li></a>
+                        </ul>
+                    </div>
+                    <div class="one">
+                        <ul>
+                            <a href="https://www.udemy.com/course/dental-x-rays-radiology-course/"><li>Dental Radiology</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="help" id="documents">
+                <h3><i class="fa-solid fa-arrow-right"></i>Help Documents</h3>
+                <p>Access helpful documents for better understanding and practice, such as:</p>
+                <div class="help-box">
+                    <ul>
+                        <a href="https://www.nidcr.nih.gov/health-info/oral-hygiene">
+                            <li>best practices in dental care</li>
+                        </a>
+                        <a href="https://www.dental.sa.gov.au/professionals/oral-health-resources/care-for-older-people-toolkit/acute-settings/oral-health-assessment">
+                            <li>Guides on Oral Health Assessment</li>
+                        </a>
+                        <a href="https://www.bloorwestsmiles.com/blog/the-7-most-common-dental-emergencies-and-how-to-prevent-them/#:~:text=Chipped%20or%20broken%20teeth&text=Rinse%20your%20mouth%20with%20warm,reduce%20swelling%20and%20relieve%20pain.">
+                            <li>Emergency Protocols</li>
+                        </a>
+                        <a href="https://portal.ct.gov/-/media/Departments-and-Agencies/DPH/dph/oral_health/PDF/OralHealthCarePatientEducationpdf.pdf?la=en">
+                            <li>Patient Education Materials</li>
+                        </a>
+                        <a href="https://www.slideshare.net/AnamikaOf/procedure-on-oral-hygiene">
+                            <li>Procedure Manuals</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="faculty" id="faculty">
+                <h3><i class="fa-solid fa-arrow-right"></i>Faculty Resources</h3>
+                <p>Resources designed to assist educators in the field of oral health care:</p>
+
+                <div class="help-box">
+                    <ul>
+                        <a href="https://openwho.org/courses/oral-health-community-AFRO">
+                            <li>Teaching Modules</li>
+                        </a>
+                        <a href="https://www.nait.ca/coned/professional-development-for-dental-health">
+                            <li>Professional Development Opportunities</li>
+                        </a>
+                        <a href="https://www.slideshare.net/HitakshiKathiria/oral-health-education-130609973">
+                            <li>Lecture Slides and Presentations</li>
+                        </a>
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9970677/">
+                            <li>Collaborative Research Projects</li>
+                        </a>
+                        <a href="https://www.cdc.gov/oralhealth/publications/index.htm">
+                            <li>Research Publications</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="student" id="students">
+                <h3><i class="fa-solid fa-arrow-right"></i>Student Resources</h3>
+                <p>Support materials for students pursuing education in oral health care:</p>
+
+                <div class="help-box">
+                    <ul>
+                        <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9781119591641">
+                            <li>Study Guides</li>
+                        </a>
+                        <a href="https://www.halton.ca/For-Residents/Public-Health/Oral-Health/Oral-Health-Education-Resources-for-Teachers-and-E">
+                            <li>Interactive Learning Tools</li>
+                        </a>
+                        <a href="https://dhaa.ca/product/dhaa-mentorship-program-mentee-registration/">
+                            <li>Mentorship Programs</li>
+                        </a>
+                        <a href="https://www.dental.pitt.edu/education/pitt-dental-medicine-student-organizations">
+                            <li>Student Organizations</li>
+                        </a>
+                        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7883648/">
+                            <li>Internship and Clinical Placement Information</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="patient-edu" id="patient">
+        <div class="patient-head">
+            <h1>Patient education</h1>
+        </div>
+
+        <div class="patient-content">
+            <div class="edu-card" id="educard">
+                <h2>Oral Hygiene Tips</h2>
+                <p>Learn effective oral hygiene practices to maintain a healthy smile.</p>
+                <a href="https://www.healthline.com/health/dental-and-oral-health/best-practices-for-healthy-teeth">Read More</a>
+            </div>
+            <div class="edu-card" id="educard">
+                <h2>Dental Care FAQs</h2>
+                <p>Get answers to frequently asked questions about dental care and procedures.</p>
+                <a href="https://www.webmd.com/oral-health/dental-health-faq">Read More</a>
+            </div>
+            <div class="edu-card" id="educard">
+                <h2>Common Dental Issues</h2>
+                <p>Understand common dental problems and how to prevent and address them.</p>
+                <a href="https://www.webmd.com/oral-health/ss/slideshow-tooth-problems">Read More</a>
+            </div>
+            <div class="edu-card" id="educard">
+                <h2>Nutrition and Oral Health</h2>
+                <p>Discover the connection between nutrition and maintaining a healthy smile.</p>
+                <a href="https://www.ada.org/en/resources/research/science-and-research-institute/oral-health-topics/nutrition-and-oral-health">Read More</a>
+            </div>
+            <div class="edu-card" id="educard">
+                <h2>Emergency Dental Care</h2>
+                <p>Learn what to do in case of a dental emergency and how to get immediate help.</p>
+                <a href="https://my.clevelandclinic.org/health/articles/11368--dental-emergencies-what-to-do">Read More</a>
+            </div>
+            <div class="edu-card" id="educard">
+                <h2>Pediatric Dentistry</h2>
+                <p>Find information on dental care for children and tips for promoting oral health in kids.</p>
+                <a href="https://en.wikipedia.org/wiki/Pediatric_dentistry">Read More</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="research" id="research">
+        <div class="research-head">
+            <h1>Research</h1>
+            <p>Explore the latest research findings in the field of oral health care.</p>
+        </div>
+
+        <div class="research-articles">
+            <div class="research-card">
+                <div class="research-img" id="one"></div>
+                <h2>Advancements in Dental Technology</h2>
+                <p>Discover the latest technological innovations in the field of dentistry.</p>
+                <a href="https://www.123dentist.com/top-10-new-technologies-in-dentistry/">Read More</a>
+                <a class="video" href="https://youtu.be/rb4vwaKNrjw?si=XAeflqwmDomhxK9K">Watch Video</a>
+            </div>
+            <div class="research-card" id="research-card2">
+                <div class="research-img" id="two"></div>
+                <h2>Oral Health and Systemic Diseases</h2>
+                <p>Explore research on the links between oral health and various systemic conditions.</p>
+                <a href="https://www.ada.org/en/resources/research/science-and-research-institute/oral-health-topics/oral-systemic-health#:~:text=A%20number%20of%20systemic%20conditions,can%20affect%20oral%20health%20include%3A&text=11-,Alzheimer's%20disease,Chronic%20kidney%20disease">Read More</a>
+                <a class="video" href="https://youtu.be/IfHy1eo3Mnw?si=HAfrko1jd_7Cyzea">Watch Video</a>
+            </div>
+            <div class="research-card" id="research-card3">
+                <div class="research-img" id="three"></div>
+                <h2>Impact of Diet on Dental Health</h2>
+                <p>Learn about studies investigating the effects of diet on oral health and hygiene.</p>
+                <a href="https://www.ncbi.nlm.nih.gov/books/NBK578297/">Read More</a>
+                <a class="video" href="https://youtu.be/pJyNtxv3DUE?si=9SLA_4Lp_KXKUmnZ">Watch Video</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="products" id="products">
+        <div class="products-head">
+            <h1>Products</h1>
+            <p>Explore our range of dental care products to maintain a healthy smile.</p>
+        </div>
+        <div class="product-cards">
+            <div class="product-card">
+                <div class="product-img"></div>
+                <h2>Toothpaste</h2>
+                <span class="price">$5.99</span>
+                <a href="#purchase-toothpaste">Purchase</a>
+            </div>
+            <div class="product-card">
+                <div class="product-img" id="img-2"></div>
+                <h2>Dental Floss</h2>
+                <span class="price">$3.99</span>
+                <a href="#purchase-floss">Purchase</a>
+            </div>
+            <div class="product-card">
+                <div class="product-img" id="img-3"></div>
+                <h2>Mouthwash</h2>
+                <span class="price">$7.99</span>
+                <a href="#purchase-mouthwash">Purchase</a>
+            </div>
+            <div class="product-card">
+                <div class="product-img" id="img-4"></div>
+                <h2>Toothbrush</h2>
+                <span class="price">$4.99</span>
+                <a href="#purchase-toothbrush">Purchase</a>
+            </div>
+            <div class="product-card">
+                <div class="product-img" id="img-5"></div>
+                <h2>Dental Whitening Kit</h2>
+                <span class="price">$19.99</span>
+                <a href="#purchase-whitening-kit">Purchase</a>
+            </div>
+            <div class="product-card">
+                <div class="product-img" id="img-6"></div>
+                <h2>Orthodontic Wax</h2>
+                <span class="price">$2.99</span>
+                <a href="#purchase-wax">Purchase</a>
+            </div>
+            <div class="product-card">
+                <div class="product-img" id="img-7"></div>
+                <h2>Electric Toothbrush</h2>
+                <span class="price">$29.99</span>
+                <a href="#purchase-electric-toothbrush">Purchase</a>
+            </div>
+            <div class="product-card">
+                <div class="product-img" id="img-8"></div>
+                <h2>Dental Picks</h2>
+                <span class="price">$2.49</span>
+                <a href="#purchase-dental-picks">Purchase</a>
+            </div>
+            <div class="product-card" id="last-card">
+                <div class="product-img" id="img-10"></div>
+                <h2>Braces</h2>
+                <span class="price">$199.99</span>
+                <a href="#purchase-braces">Purchase</a>
+            </div>
+        </div>
+    </div>
+    <div class="contact-us" id="contact">
+        <div class="contact-head">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our dental professionals for further treatment, assistance, and guidance.</p>
+        </div>
+        <div class="contacts">
+            
+            <div class="contact-form">
+                <form action="submit_contact_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+            <div class="contact-professionals">
+                <div class="professional-card" id="prof-card">
+                    <h2>Dr. John Wilson</h2>
+                    <p>Email: john.dentist@example.com</p>
+                    <p>Phone: +1 123-456-7890</p>
+                    <div class="location-map" data-lat="40.7128" data-lng="-74.0060"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+     
+        <div class="box-cont">
+    
+            <div class="bor">
+                <h3><i class="fa-solid fa-tooth"></i>32 Smiles</h3>
+                <p></p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+    
+            <div class="bor"> 
+                <h3>contact info</h3>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> 09072176319 </a>
+                <a href="#" class="links"> <i class="fas fa-phone"></i> 07043375204 </a>
+                <a href="#" class="links"> <i class="fas fa-envelope"></i> 32smiles@gmail.com </a>
+                <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Surulere, Lagos State</a>
+            </div>
+    
+            <div class="bor">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#prof" class="links"> <i class="fas fa-arrow-right"></i> professional education </a>
+                <a href="#patient" class="links"> <i class="fas fa-arrow-right"></i> patient education </a>
+                <a href="#research" class="links"> <i class="fas fa-arrow-right"></i> research </a>
+                <a href="#products" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+                <a href="#contact" class="links"> <i class="fas fa-arrow-right"></i> contact us</a>
+            </div>
+    
+            <div class="bor">
+                <h3>message us</h3>
+                <p>tell us your reviews</p>
+                <input type="email" placeholder="Enter your message" class="email"> <br>
+                <button>Enter</button>
+            </div>
+    
+        </div>
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

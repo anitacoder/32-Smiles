@@ -1,0 +1,1165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nova+Square&family=Roboto+Slab&display=swap');
+:root{
+    --blue: #183059;
+    --font1-color: #F6F4F3;
+    --logo-font-fam: "Montserrat", san-serif;
+
+    --base-size: 5px;
+    --scale: 1.28;
+    --h1: calc(var(--h2) * var(--scale)); /* 3.66rem */
+    --h2: calc(var(--h3) * var(--scale)); /* 2.93rem */
+    --h3: calc(var(--h4) * var(--scale)); /* 2.34rem */
+    --h4: calc(var(--h5) * var(--scale)); /* 1.875rem */
+    --h5: calc(var(--h6) * var(--scale)); /* 1.5rem */
+    --h6: var(--base-size); /* 1.2rem */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    transition: .5s;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    background-color: var(--blue);
+    padding: 15px;
+    z-index: 1000;
+}
+header .logo a{
+    text-decoration: none;
+    color: white;
+}
+header .logo{
+    color: var(--font1-color);
+    font-family: var(--logo-font-fam);
+    font-size: var(--h1);
+    position: relative;
+    left: 15px;
+    cursor: pointer;
+}
+header .logo .fa-tooth{
+    position: relative;
+    right: 4px;
+    font-size: 30px;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--font1-color);
+    font-family: sans-serif;
+    margin: 20px;
+    font-size: 14px;    
+}
+header nav a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+nav .home{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 185px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-bottom: 5px;
+}
+.dropdown-content a{
+    color: var(--blue);
+    text-align: center;
+}
+.dropdown-content a:hover{
+    background-color: var(--blue);
+    color: white;
+    padding: 6px 25px;
+    border-radius: 4px;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.fa-bars{
+    font-size: 35px;
+    color: white;
+    position: relative;
+    right: 25px;
+    display: none;
+}
+
+.main{
+    height: 100vh;
+    background-image: url(../Images/pexels-sora-shimazaki-5938300.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    animation: changeBackground 50s linear infinite;
+}
+@keyframes changeBackground {
+    10%, 50% {
+        background-image: url('../Images/pexels-sora-shimazaki-5938300.jpg');
+    }
+    60%, 100% {
+        background-image: url('../Images/olga-guryanova-tMFeatBSS4s-unsplash.jpg');
+    }
+}
+
+
+.head{
+    font-family: var(--logo-font-fam);
+    color: var(--font1-color);
+    background-color: var(--blue);
+    width: 18%;
+    position: relative;
+    left: 110px;
+    padding: 3px;
+    border-radius: 5px;
+    top: 270px;
+    font-size: var(--h1);
+    text-align: center;
+}
+.main-text{
+    position: relative;
+    top: 285px;
+    width: 41%;
+    left: 110px;
+    font-family: sans-serif;
+    line-height: 26px;
+    font-size: var(--h2 );
+    text-align: justify;
+    color: white;
+}
+.main-head{
+    position: relative;
+    top: 25px;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 10px;
+}
+.main-text .main-one{
+    margin-bottom: 21px;
+    position: relative;
+    top: 35px;
+
+}
+.contact{
+    position: relative;
+    top: 43px;
+    padding: 10px 35px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--font1-color);
+    border-radius: 5px;
+    font-size: var(--h2);
+    text-transform: uppercase;
+}
+.contact:hover{
+    background: none;
+    border: 2px solid white;
+}
+.contact i{
+    margin-left: 7px;
+}
+
+.professional-edu{
+    height: 130vh;
+}
+.professional-edu .prof-head{
+    text-align: center;
+    font-family: var(--logo-font-fam);
+    position: relative;
+    top: 35px;
+    line-height: 50px;
+}
+.courses{
+    font-family: sans-serif;
+    margin-left: 45px;
+    position: relative;
+    top: 55px;
+}
+.courses h3{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.courses i{
+    margin-right: 10px;
+}
+.course-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    right: 105px;
+}
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    background-color: var(--blue);
+    color: var(--font1-color);
+    border-radius: 6px;
+}
+.one ul{
+    list-style-type: square;
+}
+.one a{
+    text-decoration: none;
+    color: white;
+}
+.help{
+    position: relative;
+    top: 130px;
+    font-family: sans-serif;
+    margin-left: 45px;
+    position: relative;
+}
+.help i{
+    margin-right: 10px;
+}
+.help h3{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.help-box{
+    margin-left: 15px;
+    position: relative;
+    top: 20px;
+}
+.help-box a{
+    text-decoration: underline;
+    color: black;
+    margin: 25px;
+}
+.help-box a:hover{
+    color: blue;
+}
+.help-box ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+.faculty{
+    position: relative;
+    top: 169px;
+    font-family: sans-serif;
+    margin-left: 45px;
+    position: relative;
+}
+.faculty h3{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.faculty i{
+    margin-right: 10px;
+}
+.student{
+    position: relative;
+    top: 210px;
+    font-family: sans-serif;
+    margin-left: 45px;
+    position: relative; 
+}
+.student h3{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.student i{
+    margin-right: 10px; 
+}
+.patient-edu {
+    height: 110vh;
+    padding: 50px 20px;
+}
+
+.patient-head {
+    text-align: center;
+    font-family: var(--logo-font-fam);
+}
+
+.patient-head h1 {
+    margin-bottom: 15px;
+}
+
+.patient-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.edu-card {
+    height: 40vh;
+    width: 355px;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.edu-card:hover{
+    transform: scale(1.1);
+}
+
+.edu-card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: var(--logo-font-fam);
+}
+
+.edu-card p {
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.edu-card a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: white;
+    color: var(--blue);
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.edu-card a:hover {
+    background: none;
+    color: white;
+    border: 2px solid white;
+}
+.research{
+   height: 90vh;
+   background-color: var(--blue);
+   color: white;
+}
+.research-head{
+    text-align: center;
+    font-family: var(--logo-font-fam);
+}
+.research-head h1{
+    position: relative;
+    top: 25px;
+}
+.research-head p{
+    position: relative;
+    top: 45px;
+}
+.research-articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.research-card {
+    width: 355px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    top: 75px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.research-img{
+    margin: 5px auto;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    background-image: url(../Images/pexels-anna-shvets-3845766.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.research-img:hover{
+    transform: scale(1.1);
+    margin-bottom: 20px;
+}
+#two{
+    background-image: url(../Images/pexels-cottonbro-studio-6529115.jpg);
+}
+#three{
+    background-image: url(../Images/pexels-daniel-frank-305568.jpg);
+}
+.research-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: var(--logo-font-fam);
+}
+
+.research-card p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: sans-serif;
+}
+
+.research-card a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 7px 17px;
+    background-color: var(--blue);
+    color: white;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.research-card a:hover {
+    background: none;
+    border: 2px solid var(--blue);
+    color: black;
+}
+.research-card .video{
+    display: block;
+    background-color: #eee;
+    color: black;
+    padding: 9px;
+    border: 1px solid var(--blue);
+}
+.products{
+    height: 190vh;
+}
+.products-head{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-family: var(--logo-font-fam);
+}
+.products-head p{
+    margin-top: 30px;
+}
+.product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 45px;
+}
+.product-card {
+    margin: 20px;
+    text-align: center;
+    height: 400px;
+    width: 355px;
+    border-radius: 4px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+.product-card .product-img{
+    height: 250px;
+    width: 200px;
+    background-image: url(../Images/pngwing.com\ \(1\).png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.product-card .product-img:hover{
+    transform: scale(1.1);
+}
+#img-2{
+    background: url(../Images/pngwing.com\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-3{
+    background: url(../Images/pngwing.com\ \(3\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-4{
+    background: url(../Images/pngwing.com\ \(4\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-5{
+    background: url(../Images/pngwing.com\ \(5\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-6{
+    background: url(../Images/pngwing.com\ \(6\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-7{
+    background: url(../Images/pngwing.com\ \(7\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-8{
+    background: url(../Images/pngwing.com\ \(8\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-10{
+    background: url(../Images/pngwing.com\ \(10\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+.product-card h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: var(--logo-font-fam);
+}
+
+.product-card .price {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.product-card a {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #183059;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.product-card a:hover {
+    background-color: #35477d;
+}
+.contact-us{
+    height: 83vh;
+    
+}
+.contact-head{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-family: var(--logo-font-fam);
+}
+.contact-head p{
+    margin-top: 30px;
+}
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 35px;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.contact-form {
+    max-width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: var(--logo-font-fam);
+    align-self: self-start;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 14px 145px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea{
+    width: 100%;
+    padding: 60px 145px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 30px;
+    background-color: #183059;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: self-start;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+
+.professional-card {
+    height: 50vh;
+    width: 350px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #eee;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.professional-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: var(--logo-font-fam);
+}
+
+.professional-card p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #555;
+    font-family: sans-serif;
+}
+
+.location-map {
+    height: 229px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.footer{
+    height: auto;
+    background-color: #183059;
+    margin-top: 45px;
+}
+.footer .box-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:15px;
+}
+
+.bor h3{
+    font-size: 25px;
+    color: white;
+    padding: 20px 15px;
+    font-family: var(--logo-font-fam);
+}
+
+.bor h3 i{
+    color: white;
+}
+
+.links{
+    display: block;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: white;
+    padding:10px 15px;
+    text-decoration: none;
+}
+
+.links i{
+    color: white;
+    padding-right: 2px;
+}
+
+.links:hover i{
+    padding-right: 10px;
+    transition: .4s;
+}
+
+
+.bor p{
+    line-height: 1.8;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    padding:0 15px;
+}
+
+.bor .share a{
+    height:30px;
+    width:30px;
+    line-height:20px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #183059;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    background: #eee;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bor .share a:hover{
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+.bor .email{
+    width: 50%;
+    margin: 20px 0;
+    padding:8px 13px;
+    border-radius: 5px;
+    margin-left: 13px;
+    background: white;
+    font-size: 15px;
+    color: black;
+    border: none;
+    text-transform: none;
+}
+.bor button{
+    background-color: white;
+    color: #183059;
+    position: relative;
+    left: 12px;
+    font-size: 15px;
+    padding: 5px 15px;
+    margin-bottom:10px;
+}
+.bor button:hover{
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+@media (max-width: 1024px) {
+    header .logo{
+        font-size: smaller;
+    }
+    header nav a{
+        font-size: small;
+    }
+    .main .head{
+        width: 30%;
+    }
+    .main-head{
+        width: 150%;
+    }
+    .main-one{
+        font-size: small;
+        width: 130%;
+    }
+    .professional-edu{
+        height: 147vh;
+    }
+    .prof-head{
+        font-size: smaller;
+    }
+    .course-box{
+        margin-left: 45px;
+    }
+    .course-box .one{
+        font-size: smaller;
+    }
+    .patient-head{
+        font-size: smaller;
+    }
+    .edu-card{
+        height: 38vh;
+        width: 278px;
+    }
+    .research{
+        height: 95vh;
+    }
+    .research-head{
+        font-size: smaller;
+    }
+    #research-card3{
+        display: none;
+    }
+    .products-head{
+        font-size: smaller;
+    }
+    .product-card{
+        height: 350px;
+        width: 300px;
+    }
+    .contact-us{
+        height: 95vh;
+    }
+    .contact-head{
+        font-size: smaller;
+    }
+    .contacts{
+        position: relative;
+        top: 55px;
+    }
+    .professional-card{
+        height: 55vh;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo{
+        width: 25%;
+        font-size: small;
+    }
+    header .logo .fa-tooth{
+        font-size: larger;
+    }
+    .fa-x{
+        font-size: 27px;
+        color: white;
+        position: relative;
+        right: 25px;
+        display: block;
+    }
+    header nav{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #183059;
+        color: white;
+        width: 35%;
+        position: relative;
+        top: 211px;
+        padding: 15px;
+        left: 173px;
+        border-bottom-left-radius: 8px;
+    }
+    nav a{
+        display: block;
+    }
+    .display i{
+        display: block;
+    }
+    .head{
+        margin-left: 151px;
+    }
+    .main-head{
+        text-align: center;
+        width: 200%;
+        padding-right: 55px;
+    }
+    .main-one{
+        text-align: center;
+        width: 200%;
+        padding-right: 40px;
+    }
+    .main .contact{
+      margin-left: 182px;
+      width: 55%;
+    }
+    .prof-head{
+        font-size: x-small;
+    }
+    .course-box{
+        margin-left: 70px;
+    }
+    .course-box .one{
+        height: 40px;
+        width: 150px;
+    }
+    .prof-info h3{
+        font-size: large;
+    }
+    .prof-info p{
+        font-size: small;
+    }
+    .help-box a, .faculty a, .student a{
+        font-size: smaller;
+    }
+    .patient-edu{
+        padding: 10px;
+        height: 127vh;
+    }
+    .patient-head{
+        font-size: x-small;
+    }
+    .edu-card{
+        height: 33vh;
+        width: 321px;
+    }
+    .edu-card h2{
+        font-size: medium;
+    }
+    .edu-card p{
+        font-size: small;
+    }
+    .research-head{
+        font-size: x-small;
+    }
+    .research-card{
+        width: 325px;
+    }
+    .research-img{
+        width: 230px;
+    }
+    .products{
+        height: 203vh;
+    }
+    .products-head{
+        font-size: x-small;
+    }
+    .product-card{
+        height: 280px;
+        width: 335px;
+    }
+    .product-card h2{
+        font-size: 21px;
+    }
+    .product-card .price{
+        font-size: medium;
+    }
+    .product-card a{
+        padding: 5px 10px;
+        font-size: small;
+    }
+    .product-card .product-img{
+        height: 120px;
+        width: 120px;
+    }
+    #last-card{
+        display: none;
+    }
+    .contact-head{
+        font-size: small;
+    }
+    .contact-professionals{
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+  header nav{
+    left: 96px;
+    width: 45%;
+  }
+  header .logo{
+    width: 29%;
+    font-size: small;
+  }
+  .main{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  #head{
+    width: 45%;
+    padding: 5px 10px;
+    margin-left: 68px;
+  }
+  .main-head{
+    width: 220%;
+    font-size: 40px;
+    position: relative;
+    right: 40px;
+  }
+  .main-one{
+    font-size: 12px;
+    width: 205%;
+    position: relative;
+    right: 25px;
+  }
+  #con-btn{
+    font-size: 11px;
+    width: 65%;
+    right: 60px;
+  }
+  .course-box{
+    left: -70px;
+    gap: 40px;
+  }
+  .one ul a {
+    font-size: 11px;
+  }
+  .help a, .faculty a, .student a{
+    font-size: 11px;
+  }
+  .patient-edu {
+    height: 250vh;
+    padding: 50px 40px;
+  }
+  #educard{
+    width: 445px;
+ }
+ #research-card2{
+    display: none;
+ }
+ .research-card{
+    width: 415px;
+ }
+ .research-img{
+    width: 350px;
+    margin-bottom: 10px;
+ } 
+ .products{
+    height: 388vh;
+ }
+ .product-card{
+    width: 450px;
+ }
+ .contact-us{
+    padding: 0 55px;
+ }
+ .contact-head{
+    font-size: x-small;
+ }
+ form label{
+    font-size: 14px;
+ }
+}
+@media (max-width: 520px){
+   header .logo {
+    font-size: 12px;
+    width: 45%;
+   }
+   #tog-btn i{
+    font-size: 27px;
+   }
+   header nav{
+    left: 39px;
+    width: 55%;
+   }
+   .main #head{
+    width: 60%;
+    left: 40px;
+   }
+   .main .main-head{
+    width: 260%;
+    right: 98px;
+   }
+   .main-one{
+    width: 220%;
+    right: 57px;
+   }
+   #con-btn{
+    font-size: 10px;
+    width: 72%;
+    right: 109px;
+    }
+    .course-box ul a{
+        position: relative;
+        left: 4px;
+    }
+   
+}
+@media (max-width: 414px){
+    header .logo{
+        font-size: 12px;
+        width: 38%;
+    }
+    #tog-btn i{
+        font-size: 27px;
+    }
+    header nav{
+        left: 39px;
+        width: 55%;
+    }
+    #head{
+        width: 65%;
+        padding: 5px 10px;
+        margin-left: 40px;
+        font-size: small;
+    }
+    .main{
+        padding: 0 15px;
+    }
+    .main-head{
+        width: 365%;
+        right: 115px;
+        font-size: 32px;
+    }
+    #m-head{
+        width: 270%;
+    }
+    .main-one{
+        width: 265%;
+        right: 98px;
+    }
+    #con-btn{
+        font-size: 11px;
+        width: 99%;
+        right: 169px;
+    }
+    .professional-edu{
+        height: 170vh;
+    }
+    .prof-head{
+        padding: 0px 10px;
+    }
+    .course-box{
+        font-size: 11px;
+        width: 100%;
+        gap: 5px;
+        
+    }
+    .course-box .one{
+        width: 105px;
+        position: relative;
+        right: 9px;
+    }
+    .course-box ul a{
+        position: relative;
+        left: 3px;
+    }
+    .help a, .faculty a, .student a{
+        width: 70%;
+    }
+    #educard{
+        width: 495px;
+    }
+    .research-card{
+        width: 370px;
+    }
+    .research-img{
+        width: 330px;
+    }
+}
